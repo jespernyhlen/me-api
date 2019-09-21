@@ -10,7 +10,11 @@ const reports = require('./routes/reports.js');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js');
 
-const port = 1337;
+// Production port
+const port = 8333;
+
+// Development port
+// const port = 1337;
 
 app.use(cors());
 
