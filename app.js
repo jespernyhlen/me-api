@@ -9,7 +9,7 @@ const presentation = require('./routes/presentation.js');
 const reports = require('./routes/reports.js');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js');
-const login = require('./routes/users.js');
+const users = require('./routes/users.js');
 
 // Production port
 const port = 8333;
