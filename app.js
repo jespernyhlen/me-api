@@ -52,7 +52,7 @@ app.get('/reports/week/:id', reports);
 app.post('/register', register);
 app.post('/login', login);
 app.post('/reports', reports);
-app.post('/users', users);
+app.get('/users', users);
 
 // Start up server
 app.listen(port, () => console.log(`Example API listening on port ${port}!`));
