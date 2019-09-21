@@ -15,7 +15,7 @@ const auth = {
             return res.status(401).json({
                 errors: {
                     status: 401,
-                    source: '/register',
+                    source: '/login',
                     title: 'Email or password missing',
                     detail: 'Email or password missing in request'
                 }
@@ -46,6 +46,7 @@ const auth = {
             }
 
             const user = rows;
+            console.log(user);
 
             bcrypt.compare(password, user.password, (err, result) => {
                 if (err) {
