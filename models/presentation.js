@@ -2,7 +2,7 @@ const db = require('../db/database.js');
 
 const presentation = {
     getPresentation: function(req, res) {
-        let sql = `SELECT name, present FROM presentation WHERE name='jesper'`;
+        let sql = `SELECT name, text FROM presentation WHERE name='Jesper Nyhlén'`;
 
         db.get(sql, function(err, rows) {
             if (err) {

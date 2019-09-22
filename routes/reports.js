@@ -8,6 +8,8 @@ require('dotenv').config();
 
 const jwtSecret = process.env.JWT_SECRET;
 
+router.get('/reports', (req, res) => reports.getReports(req, res));
+
 router.get('/reports/week/:id', (req, res) =>
     reports.getReport(req.params.id, res)
 );
@@ -16,6 +18,12 @@ router.post(
     '/reports',
     (req, res, next) => checkToken(req, res, next),
     (req, res) => reports.createReport(req, res)
+);
+
+router.post(
+    '/reports/update',
+    (req, res, next) => checkToken(req, res, next),
+    (req, res) => reports.updateReport(req, res)
 );
 
 function checkToken(req, res, next) {

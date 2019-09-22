@@ -20,5 +20,5 @@ CREATE TABLE IF NOT EXISTS reports (
 
 CREATE TABLE IF NOT EXISTS presentation (
     name VARCHAR(20) NOT NULL,
-    present VARCHAR (100) NOT NULL
+    text VARCHAR (500) NOT NULL
 );

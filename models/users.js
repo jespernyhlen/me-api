@@ -4,7 +4,7 @@ const users = {
     getUsers: function(req, res) {
         let sql = `SELECT * FROM users`;
 
-        db.get(sql, function(err, rows) {
+        db.all(sql, function(err, rows) {
             if (err) {
                 return res.status(500).json({
                     error: {

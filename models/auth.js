@@ -10,7 +10,6 @@ const auth = {
     login: function(res, body) {
         const email = body.email;
         const password = body.password;
-
         if (!email || !password) {
             return res.status(401).json({
                 errors: {
@@ -46,7 +45,6 @@ const auth = {
             }
 
             const user = rows;
-            console.log(user);
 
             bcrypt.compare(password, user.password, (err, result) => {
                 if (err) {
@@ -67,7 +65,6 @@ const auth = {
                     let jwtToken = jwt.sign(payload, jwtSecret, {
                         expiresIn: '1h'
                     });
-                    console.log('jwt token: ' + jwtToken);
 
                     return res.json({
                         data: {

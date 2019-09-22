@@ -45,13 +45,15 @@ app.use((req, res, next) => {
 app.get('/', presentation);
 
 app.get('/reports/week/:id', reports);
-
 app.get('/reports/week/:id', reports);
 
-// Register user
 app.post('/register', register);
 app.post('/login', login);
+
+app.get('/reports', reports);
 app.post('/reports', reports);
+app.post('/reports/update', reports);
+
 app.get('/users', users);
 
 // Start up server
