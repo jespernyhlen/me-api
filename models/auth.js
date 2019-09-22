@@ -20,8 +20,8 @@ const auth = {
                 }
             });
         }
-
-        db.get('SELECT * FROM users WHERE email = ?', email, (err, rows) => {
+        let sql = 'SELECT * FROM users WHERE email=?';
+        db.get(sql, email, (err, rows) => {
             if (err) {
                 return res.status(500).json({
                     errors: {
