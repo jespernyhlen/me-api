@@ -17,6 +17,7 @@ VALUES (
 
 INSERT INTO reports (kmom, text) 
 VALUES (
+'1',
 '# Readme (English)
 
 ### Get started
@@ -38,6 +39,7 @@ You will also see any lint errors in the console.'
 
 INSERT INTO reports (kmom, text) 
 VALUES (
+'2',
 '# Vecka 2
 
 ### Registrering och date picker
@@ -53,6 +55,7 @@ Därför valde jag att lägga år och datum i en select meny, som enkelt går at
 
 INSERT INTO reports (kmom, text) 
 VALUES (
+'3',
 '# Vecka 3
 
 ### Me-api kopplat till frontend
@@ -67,9 +70,4 @@ Jag kommer dock jobba vidare med att utveckla min kod för att utnyttja ramverke
 
 Många lärdomar rikare blev man, men jag måste medge att det tog långt mer tid än väntat.'
 );
-
-
-
-
-
 
