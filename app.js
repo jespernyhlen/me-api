@@ -9,7 +9,6 @@ const presentation = require('./routes/presentation.js');
 const reports = require('./routes/reports.js');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js');
-const users = require('./routes/users.js');
 
 // Production port
 const port = 8333;
@@ -53,8 +52,6 @@ app.post('/login', login);
 app.get('/reports', reports);
 app.post('/reports', reports);
 app.post('/reports/update', reports);
-
-app.get('/users', users);
 
 // Start up server
 app.listen(port, () => console.log(`Example API listening on port ${port}!`));
