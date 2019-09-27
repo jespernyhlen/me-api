@@ -4,7 +4,6 @@ build:
             tests:
                 override:
                     - command:
-                          - export JWT_SECRET='notSafeSecret'
                           - chmod +x db/reset_db_test.bash
                           - npm test
                       coverage:
