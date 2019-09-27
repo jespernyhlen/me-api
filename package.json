@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "pretest": "$(db/reset_db_test.bash)",
-        "test": "nyc --reporter=html --reporter=text --reporter=clover mocha 'test/**/*.js' --timeout 10000 ",
+        "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js' --timeout 10000 ",
         "start": "nodemon app.js",
         "production": "NODE_ENV='production' node app.js",
         "eslint": "eslint '**/*.js' --ignore-pattern test/"
