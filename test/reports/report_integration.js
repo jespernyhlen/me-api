@@ -45,11 +45,13 @@ describe('Reports', () => {
 
     describe('POST /reports/week/1', () => {
         let token;
+
         it('login to get token', done => {
             let user = {
                 email: 'jeppe_nyhlen@hotmail.com',
                 password: 'hejhej'
             };
+
             chai.request(server)
                 .post('/login')
                 .send(user)
@@ -64,6 +66,7 @@ describe('Reports', () => {
                 kmom: '1',
                 text: 'Updated text'
             };
+
             chai.request(server)
                 .post('/reports/update')
                 .set('x-access-token', token)

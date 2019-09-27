@@ -12,6 +12,7 @@ describe('Register', () => {
     describe('POST /register', () => {
         it('should have status 401 with no user information', done => {
             let user = {};
+
             chai.request(server)
                 .post('/register')
                 .send(user)

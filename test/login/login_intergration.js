@@ -15,6 +15,7 @@ describe('Login', () => {
                 email: 'jeppe_nyhlen@hotmail.com',
                 password: 'hejhej'
             };
+
             chai.request(server)
                 .post('/login')
                 .send(user)
@@ -30,6 +31,7 @@ describe('Login', () => {
                 email: 'jeppe_nyhlen@hotmail.com',
                 password: 'hejhej'
             };
+
             chai.request(server)
                 .post('/login')
                 .send(user)
@@ -45,6 +47,7 @@ describe('Login', () => {
             let user = {
                 email: 'jeppe_nyhlen@hotmail.com'
             };
+
             chai.request(server)
                 .post('/login')
                 .send(user)
@@ -60,6 +63,7 @@ describe('Login', () => {
                 email: 'jeppe_nyhlen@hotmail.com',
                 password: 'qweasd'
             };
+
             chai.request(server)
                 .post('/login')
                 .send(user)
