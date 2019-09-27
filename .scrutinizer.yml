@@ -3,9 +3,8 @@ build:
         coverage:
             tests:
                 override:
-                    command:
-                          - chmod +x db/reset_db_test.bash
-                          - npm test
-                      coverage:
-                          file: coverage/clover.xml
-                          format: clover
+                    - command: chmod +x db/reset_db_test.bash
+                    - command: npm test
+                        coverage:
+                            file: coverage/clover.xml
+                            format: clover
