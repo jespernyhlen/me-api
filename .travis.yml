@@ -11,6 +11,8 @@ git:
     submodules: false
 
 before_script:
+    - export JWT_SECRET='notSafeSecret'
+    - chmod +x db/reset_db_test.bash
     - npm install
 
 script:
