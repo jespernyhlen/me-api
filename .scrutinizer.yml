@@ -3,7 +3,7 @@ build:
         coverage:
             tests:
                 override:
-                    - command:
+                    command:
                           - chmod +x db/reset_db_test.bash
                           - npm test
                       coverage:
