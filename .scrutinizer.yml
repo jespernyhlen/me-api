@@ -1,10 +1,12 @@
 build:
-    nodes:
-        coverage:
-            tests:
-                override:
-                    - command: chmod +x db/reset_db_test.bash
-                    - command: npm test
-                        coverage:
-                            file: coverage/clover.xml
-                            format: clover
+  nodes:
+    coverage:
+      tests:
+        override:
+          - js-scrutinizer-run
+          - export JWT_SECRET="notSafeSectret"
+          - chmod +x db/reset_db_test.bash
+          - npm test
+            coverage:
+              file: coverage/clover.xml
+              format: clover
