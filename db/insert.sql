@@ -1,24 +1,30 @@
 
 
-INSERT INTO presentation (name, text) 
-VALUES (
-    'Jesper Nyhlén',
-    'Hej! Välkommen till min me-sida för kursen JS-Ramverk. Mitt namn är Jesper Nyhlén och studerar Webbutveckling vid Blekinge Tekniska Högskola. Denna plats kommer att vara min bas inom kursen och uppdateras med redovisningar samt annan information gällande detta kursmoment. Uppdateringar kommer ständigt ske, så det är bara att följa med!'
+INSERT INTO presentation
+    (name, text)
+VALUES
+    (
+        'Jesper Nyhlén',
+        'Hej! Välkommen till min me-sida för kursen JS-Ramverk. Mitt namn är Jesper Nyhlén och studerar Webbutveckling vid Blekinge Tekniska Högskola. Denna plats kommer att vara min bas inom kursen och uppdateras med redovisningar samt annan information gällande detta kursmoment. Uppdateringar kommer ständigt ske, så det är bara att följa med!'
 );
 
-INSERT INTO users (email, firstname, lastname, birthday, password) 
-VALUES (
-    'jeppe_nyhlen@hotmail.com',
-    'jesper',
-    'nyhlen',
-    '1993-07-05',
-    '$2a$15$LPVsNGge9ny4UQTaNxgxHeryF/FtcMy8S9z8h7Vy.Usu9.m.nki1S'
+INSERT INTO users
+    (email, firstname, lastname, birthday, password)
+VALUES
+    (
+        'jeppe_nyhlen@hotmail.com',
+        'jesper',
+        'nyhlen',
+        '1993-07-05',
+        '$2a$15$LPVsNGge9ny4UQTaNxgxHeryF/FtcMy8S9z8h7Vy.Usu9.m.nki1S'
 );
 
-INSERT INTO reports (kmom, text) 
-VALUES (
-'1',
-'# Readme (English)
+INSERT INTO reports
+    (kmom, text)
+VALUES
+    (
+        '1',
+        '# Readme (English)
 
 ### Get started
 
@@ -37,10 +43,12 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.'
 );
 
-INSERT INTO reports (kmom, text) 
-VALUES (
-'2',
-'# Vecka 2
+INSERT INTO reports
+    (kmom, text)
+VALUES
+    (
+        '2',
+        '# Vecka 2
 
 ### Registrering och date picker
 
@@ -53,10 +61,12 @@ Jag lade mer mest tid på min date picker. Jag ville ha någon typ utav popup me
 Därför valde jag att lägga år och datum i en select meny, som enkelt går att överblicka och innehåller hela ord. Sedan beroende på antal dagar i den månad, visas datumen upp i ett klassiskt format nedanför, där man med enkelhet kan klicka i enskilt datum. Vilken dag i veckan eller liknande detalj hoppade jag över, men skulle möjligt hjälpa en användare vid t.ex. bokning av en resa eller vid ett format där veckodagar gör skillnad. Här tänkte jag istället att vid val av födelsedag ska användaren bara så snabbt som möjligt få en överblick och hitta siffran som den letar efter och ligger då enkelt numrerat.'
 );
 
-INSERT INTO reports (kmom, text) 
-VALUES (
-'3',
-'# Vecka 3
+INSERT INTO reports
+    (kmom, text)
+VALUES
+    (
+        '3',
+        '# Vecka 3
 
 ### Me-api kopplat till frontend
 
@@ -69,5 +79,30 @@ Det blir dock ett extra hinder (utmaning vid positivt tänkande) att nu göra de
 Jag kommer dock jobba vidare med att utveckla min kod för att utnyttja ramverket bättre, men det är en värld i sig att sätta sig in i allt som props, komponenter och hur de bäst ska samverka. Med tanke på UX är sidan inte än på högsta nivå, mycket fick lida där pågrund utav tidsbristen till att implementera allting.
 
 Många lärdomar rikare blev man, men jag måste medge att det tog långt mer tid än väntat.'
+);
+
+INSERT INTO reports
+    (kmom, text)
+VALUES
+    (
+        '4',
+        '# Vecka 4
+
+### Selenium tester
+
+I vecka 4 låg fokusen på tester och mina tre testfall kommer beskriveas nedan.
+
+### Test ett
+
+Första testet är riktat mot login routen. Jag vill testa att routen /login tar dig till en sida med rubriken Logga in användare samt innehar alla delar av ett login-formulär.
+
+### Test två
+
+Andra testet är riktat mot register routen. Liknande login routen vill jag se att /register tar mig till en sida med rubriken Registrera användaer och innehar alla delar av ett register-formulär.
+
+### Test tre
+
+Tredje testet är riktot mot min navbar. Här vill jag se att man från första sidan har en navbar som kan ta mig till sidorna för att logga in, registrera användare samt rapport för vecka 1.'
+
 );
 
