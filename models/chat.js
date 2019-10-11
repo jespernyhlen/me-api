@@ -47,6 +47,10 @@ async function findInCollection(dsn, colName, criteria, projection, limit) {
         .find(criteria, projection)
         .limit(limit)
         .toArray();
+    console.log(client);
+    console.log(db);
+    console.log(col);
+    console.log(res);
 
     await client.close();
 
