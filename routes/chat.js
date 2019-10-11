@@ -7,7 +7,7 @@ router.post('/insert', (req, res) => {
     chat.insertMessage(req.body, res);
 });
 
-router.get('/list', async (req, res) => {
+router.get('/list', (req, res) => {
     chat.getMessages(req, res);
 });
 

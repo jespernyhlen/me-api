@@ -4,9 +4,8 @@ const dsn = process.env.DBWEBB_DSN || 'mongodb://localhost:27017/chat';
 const chat = {
     insertMessage: async function(request, response) {
         try {
-            console.log(request);
-
             let res = await insertCollection(dsn, 'crowd', [request]);
+            console.log(res);
             response.json(res);
         } catch (err) {
             console.log(err);
@@ -17,12 +16,11 @@ const chat = {
     getMessages: async function(request, response) {
         try {
             let res = await findInCollection(dsn, 'crowd', {}, {}, 0);
-
             console.log(res);
             response.json(res);
         } catch (err) {
             console.log(err);
-            response.json(err);
+            res.json(err);
         }
     }
 };
@@ -35,8 +33,9 @@ async function insertCollection(dsn, colName, doc) {
     const col = await db.collection(colName);
 
     await col.insertMany(doc);
-
     await client.close();
+
+    // return res;
 }
 
 async function findInCollection(dsn, colName, criteria, projection, limit) {
@@ -47,10 +46,6 @@ async function findInCollection(dsn, colName, criteria, projection, limit) {
         .find(criteria, projection)
         .limit(limit)
         .toArray();
-    console.log(client);
-    console.log(db);
-    console.log(col);
-    console.log(res);
 
     await client.close();
 
