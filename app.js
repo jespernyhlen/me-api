@@ -5,11 +5,14 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const chat = require('./routes/chat.js');
+
 const presentation = require('./routes/presentation.js');
 const reports = require('./routes/reports.js');
 const register = require('./routes/register.js');
 const login = require('./routes/login.js');
 
+// const dsn = process.env.DBWEBB_DSN || 'mongodb://localhost:27017/mumin';
 // Production port
 const port = 8333;
 
@@ -52,6 +55,11 @@ app.post('/login', login);
 app.get('/reports', reports);
 app.post('/reports', reports);
 app.post('/reports/update', reports);
+
+// Return a JSON object with list of all documents within the collection.
+
+app.get('/list', chat);
+app.post('/insert', chat);
 
 // Start up server
 const server = app.listen(port, () =>

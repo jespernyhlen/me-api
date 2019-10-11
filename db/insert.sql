@@ -102,7 +102,7 @@ Andra testet är riktat mot register routen. Liknande login routen vill jag se a
 
 ### Test tre
 
-Tredje testet är riktot mot min navbar. Här vill jag se att man från första sidan har en navbar som kan ta mig till sidorna för att logga in, registrera användare samt rapport för vecka 1.'
+Tredje testet är riktat mot min navbar. Här vill jag se att man från första sidan har en navbar som kan ta mig till sidorna för att logga in, registrera användare samt rapport för vecka 1.'
 
 );
 
