@@ -8,6 +8,7 @@
         "test": "nyc --reporter=html --reporter=text --reporter=clover mocha test/**/*.js --timeout 10000",
         "start": "nodemon app.js",
         "reset": "node src/setup.js",
+        "reset-db": "bash db/reset_db.bash",
         "production": "NODE_ENV='production' node app.js",
         "eslint": "eslint '**/*.js' --ignore-pattern test/"
     },
