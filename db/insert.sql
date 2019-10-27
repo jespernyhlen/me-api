@@ -106,3 +106,24 @@ Tredje testet är riktat mot min navbar. Här vill jag se att man från första 
 
 );
 
+
+
+INSERT INTO reports
+    (kmom, text)
+VALUES
+    (
+        '10',
+        '# Projekt
+
+### Allmänt om projektet
+
+Det var ett intressant projekt som innehöll många delar som skulle samverka. Det innehöll såklart många moment som liknar det vi gjort tidigare i kursen. Men med de ändringar som projektet gav och även den personliga utvecklingen fanns det många steg som ändå inte var desamma. Det enklaste var att anpassa delarna för att logga in och autentisera en användare samt registrera en ny. Sedan var implementationen av realtidsaspekten det mest krävande och utmanande. Att få allt att "fungera" gick hyffsat smidigt. Men att sedan få hela applikationen att "fungera bra" tog lite extra tid. Eftersom mycket bygger på integration i realtid krävs det att allting uppdateras hela tiden. Beroende på hur många delar som ska ingå i detta kan svårighetsgraden variera. Jag ville göra det enkelt för en användare att logga in och känna kontroll genom applikationen, och främst delen som består av trading. Den svåraste delen blev då hur man skulle förhålla sig till koden i ramverket och på vilket sätt allting skulle implementeras, det tog sin tid och research. 
+
+Projektet var bra upplagt och jag gillar teorin bakom ett friare kursmoment, där vi jobbar mot samma mål men vägen dit kan varieras. Det kändes lagom stort med tanke på tidigare erfarehet och mängd som man kunde bygga vidare på. Såklart är tidsramen varierad beroende på ambitionsnivå och vad man vill uppnå. Men jag tycker det gick att fullföra inom rimlig tid.
+
+### Allmänt om kursen
+
+Kursen likt projektet var av en friare variant vilket gav sina med och motgångar. Vi kommer närmare en tid där vi ska ut i arbetsmarknaden och detta kändes som ett naturligt sätt att börja likna det på. Man fick förlita sig mer på sin egen förmåga att finna information anpassat till sin egen väg att gå, även om en bas ofta fanns att utgå ifrån med hjälp av kursmaterial. Det ända som jag generellt ser är nackdelen av det hela är kunskapen av det specifika ramverket vi fick välja. När det är ett sådant nytt val kunde det ibland vara svårt att utgå ifrån de rena JavaScript exempel och implementera det på korrekt sätt. Att utgå från sig själv och sin egen information kunde i vissa fall bli ett tidskrävande moment för att bygga vidare på en dålig implementation. Men kursen får 8/10 och rekommenderar den absolut, friheten för mig har fler fördelar än nackdelar.
+'
+
+);
